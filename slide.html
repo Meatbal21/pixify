@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slide.css">
 
     <title>pixify</title>
 </head>
@@ -14,14 +15,19 @@
         <div class="nav-bar">
             <a href="submission.html">2023 Submission</a>
             <a href="about.html">About</a>
+            <p class="theme-btn">Dark Mode</p>
         </div>
     </div>
     
     <div id="image-page"></div>
-    <div class="button-image">
-        <button class="prev" id="prev" onclick="prev()">Previous</button>
-        <button class="next" id="next" >Next</button>
-    </div>
+
+        <div class="button-image">
+            <p id="info">0 of 0</p>
+            <div class="button-container">
+                <button class="prev" id="prev" onclick="dwnOne()">Previous</button>
+                <button class="next" id="next" onclick="upOne()" >Next</button>
+            </div>
+        </div>
     
 <script src="./script/slide.js"></script>
 </body>
